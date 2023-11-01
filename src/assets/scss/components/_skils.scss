@@ -1,0 +1,46 @@
+.skils {
+  padding: 10rem 0;
+  padding-top: 15rem;
+  display: flex;
+  align-items: center;
+  background-color: #fafbfc;
+}
+
+.skils__item {
+  width: 100%;
+  text-align: center;
+  p {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.skils__subtitle {
+  margin-bottom: 3rem;
+  display: block;
+}
+
+.skils-icons {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: -3rem;
+  display: flex;
+  justify-content: space-between;
+  &__items {
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .skils {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .skils__item {
+    text-align: left;
+    width: 50%;
+    padding-left: 5rem;
+  }
+}

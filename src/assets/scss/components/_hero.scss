@@ -1,0 +1,130 @@
+.hero {
+  position: relative;
+  .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero-box__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // right: 0;
+  margin: auto;
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-box__item:nth-of-type(2) {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 6rem;
+  background-color: rgba($color: #fff, $alpha: 0.5);
+}
+
+.hero-content__desc {
+  margin-bottom: 5.5rem;
+}
+
+.hero__btn {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.2rem;
+  max-width: 25rem;
+  width: 100%;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: $title-color;
+  color: $white;
+  span {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 10rem;
+    background-color: $title-color;
+    color: $white;
+    transition: $default-transition;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    .container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .hero-box__item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .hero-box__item:nth-of-type(2) {
+    left: auto;
+    right: 0;
+  }
+
+  .hero-content {
+    text-align: left;
+    width: 50%;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .hero-content__title {
+    margin-bottom: 3.5rem;
+  }
+
+  .hero-content__friendly {
+    margin-bottom: 3rem;
+    display: block;
+    color: $lite-gray;
+  }
+  .hero-content__desc {
+    padding-right: 5rem;
+  }
+
+  .hero__btn {
+    margin-left: 0;
+    border: 0.2rem solid $border-color;
+    background-color: transparent;
+    color: $title-color;
+    &:hover span {
+      width: 100%;
+      transition: $default-transition;
+    }
+  }
+}

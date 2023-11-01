@@ -1,0 +1,14 @@
+@use 'sass:math';
+
+@import './libs/normoliza.css';
+@import '../fonts/_fonts';
+@import './layout/_mixins';
+@import './layout/_variables';
+@import './layout/_base';
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/skils';
+@import './components/works';
+@import './components/contract';
+@import './components/footer';

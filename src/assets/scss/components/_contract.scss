@@ -1,0 +1,44 @@
+.contract {
+  padding: 10rem 0;
+  background-color: #fafbfc;
+  &__subtitle {
+    margin-bottom: 3rem;
+    display: block;
+  }
+  &__title {
+    margin-bottom: 6rem;
+  }
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__items {
+    position: relative;
+    margin-bottom: 8.5rem;
+    width: 100%;
+    span {
+      padding-left: 2rem;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4.5rem;
+      margin: auto;
+      height: 0.2rem;
+      width: 90%;
+      background-color: $border-color;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .steps {
+    &__items {
+      padding-right: 3rem;
+      width: 33.3%;
+    }
+  }
+}
