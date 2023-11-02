@@ -5,9 +5,9 @@ import { useForm } from 'react-hook-form'
 import axios from 'axios'
 
 const Form = () => {
-  const TOKEN = '5955226386:AAEbZBB21Lh831KKeECL9GOImX4B5r1ZS7Y'
-  const CHAT_ID = '-1001840399816'
-  const SRC = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+  const TOKEN = ''
+  const CHAT_ID = ''
+  const SRC = ``
 
   const {
     register,
